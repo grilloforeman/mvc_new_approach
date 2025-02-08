@@ -34,7 +34,7 @@ especially when it comes to memory and performance management.
 Let's explore this in detail, considering the context of a PHP web game.
 
 ### Advantages of Using Procedural with Structs in PHP
-####Memory Management:
+#### Memory Management:
 
 PHP is a scripting language that works with the HTTP request-response cycle. 
 This means that objects are typically loaded into memory only during the execution of a request and are then discarded.
