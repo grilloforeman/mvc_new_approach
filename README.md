@@ -71,11 +71,9 @@ function getPlayerScores($playerId) {
     $stmt->bind_param("i", $playerId);
     $stmt->execute();
     $result = $stmt->get_result();
-
     $scores = [];
     while ($row = $result->fetch_assoc()) {
         $scores[] = $row['score'];
     }
-
     return $scores;
 }
