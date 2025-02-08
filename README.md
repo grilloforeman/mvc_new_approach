@@ -4,7 +4,7 @@ A new approach to thinking about the use of MVC and its use....
 
 
 
-** The idea of ​​using mvc with struct and where to apply it**, with copilot several questions were asked
+**The idea of ​​using mvc with struct and where to apply it**, with copilot several questions were asked
 and the applicability of this way of using mvc with structs, you have to take into account that 
 there are different scenarios and programming languages, for example php where it uses http, 
 where nowadays with poo, that is, after downloading everything, the struct with procedural 
