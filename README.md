@@ -78,3 +78,34 @@ You can structure your code using a procedural approach with structs to manage t
     return $scores;
 }
 ```
+
+### Visão (View):
+
+```function displayScores($scores) {
+    foreach ($scores as $score) {
+        echo "Pontuação: " . htmlspecialchars($score) . "<br>";
+    }
+} 
+```
+
+
+
+### Controlador (Controller):
+```
+function handleRequest($playerId) {
+    $scores = getPlayerScores($playerId);
+    displayScores($scores);
+}
+
+
+
+
+```
+### Arquivo Principal:
+```
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['player_id'])) {
+    $playerId = intval($_GET['player_id']);
+    handleRequest($playerId);
+}
+```
+
