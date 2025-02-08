@@ -64,7 +64,7 @@ You can structure your code using a procedural approach with structs to manage t
 ## Model (Model):
 
 
-function getPlayerScores($playerId) {
+``` function getPlayerScores($playerId) {
     // Suponha que você tenha uma conexão com o banco de dados chamada $conn
     $query = "SELECT score FROM scores WHERE player_id = ?";
     $stmt = $conn->prepare($query);
@@ -77,3 +77,4 @@ function getPlayerScores($playerId) {
     }
     return $scores;
 }
+```
